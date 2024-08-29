@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="/styles/registration.css">
+    <link rel="shortcut icon" href="/assets/favIcon.jpeg" type="image/x-icon">
+    <script src="/scripts/form_submit.js" defer></script>
+</head>
+
+<body>
+    <div class="img">
+        <img src="../assets/background_image.jpg" alt="Background">
+    </div>
+    <div class="form">
+        <form name="values" id="form" method="post">
+            <h1>Registration Form</h1>
+            <div>
+                <div class="lable">
+                    <label for="user_name">Your Name:</label>
+                </div>
+                <input type="text" name="Name" id="user_name" required>
+            </div>
+            <div>
+                <div class="lable">
+                    <label for="user_city">Your City And State</label>
+                </div>
+                <input type="text" name="City" id="user_city" required>
+            </div>
+            <div>
+                <div class="lable">
+                    <label for="user_education">Your Education:</label>
+                </div>
+                <input type="text" name="Education" id="user_education" required>
+            </div>
+            <div>
+                <div class="lable">
+                    <label for="user_age">Your Age:</label>
+                </div>
+                <input type="number" name="Age" id="user_age" required>
+            </div>
+            <div>
+                <div class="lable">
+                    <label for="user_job">What Are You Doing:</label>
+                </div>
+                <input type="text" name="Current_Status" id="user_job" required>
+            </div>
+            <div>
+                <div class="lable">
+                    <label for="user_mobile">Your Mobile Number:</label>
+                </div>
+                <input type="number" name="Mobile_Number" id="user_mobile" maxlength="10" minlength="10" pattern="\d{10}" required>
+            </div>
+            <div id="btn">
+                <button>Clear</button>
+            </div>
+            <div>
+                <input type="submit" name="name" id="submit" value="Submit Form">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
